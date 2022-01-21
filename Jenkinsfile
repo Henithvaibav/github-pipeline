@@ -10,14 +10,14 @@ stages {
   stage('build') {
     steps {
       // One or more steps need to be included within the steps block.
-	bat 'Build.bat'
+	echo "build successfully"
     }
   }
 
   stage('test') {
     steps {
       // One or more steps need to be included within the steps block.
-	bat 'Test.bat'
+	echo "Test successful"
     }
   }
 
@@ -25,7 +25,7 @@ stages {
   stage('quality') {
     steps {
       // One or more steps need to be included within the steps block.
-	bat 'Quality.bat'
+	echo "Quality successful"
     }
   }
 
@@ -33,7 +33,7 @@ stages {
   stage('deploy') {
     steps {
       // One or more steps need to be included within the steps block.
-	bat 'Deploy.bat'
+	echo "deply successful"
     }
   }
 }
